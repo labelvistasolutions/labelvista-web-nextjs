@@ -8,7 +8,7 @@ import ImageReveal from "@/components/motion/ImageReveal";
 import { StaggerGroup, StaggerItem } from "@/components/motion/StaggerGroup";
 
 export default function HomePage() {
-  const featuredProducts = productsData.filter((p) => p.featured);
+  const featuredProducts = productsData.filter((p) => p.featured).slice(0, 6);
 
   return (
     <div className="flex flex-col w-full">

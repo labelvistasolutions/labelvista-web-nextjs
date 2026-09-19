@@ -33,7 +33,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Blank and pre-printed sequential barcode label rolls for inventory tracking, retail POS, and logistics.",
     description: "Comprehensive barcode label solutions including blank direct thermal / thermal transfer rolls and factory pre-printed sequential barcode rolls. Engineered for supply chain tracking, retail POS systems, warehouse inventory management, and automated logistics with 100% verified optical scan accuracy.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAJx_wRv9CadNKsEagI6Uyy0TzooIxktua0iaHTCu7D8KkNQ4uaQwBHf2Q8SpTl1cjpEKX6XYVDYOitq1UpZnQ-BnTdrcpB8o9tsxYtNs5FbT81lff8Iduaqjy5tUrgrUIwybNDV-cMnisXg74qm5I8-T4kOQRGazcEkbY5GtNNbGMXBSYkvAQrEoGEKslu0BIVZitnYDtGh3yIKrdFC1k9GKLlvERafAFR51TQyjFxkJW0-95jLPNr",
+    image: "/images/products/barcode-labels.jpg",
     imageAlt: "High quality blank and pre-printed barcode label rolls with sharp barcodes",
     featured: true,
     applications: [
@@ -112,7 +112,7 @@ export const productsData: Product[] = [
     badgeType: "green",
     shortDescription: "UV-cured, fade-resistant labels engineered for outdoor durability and chemical resistance.",
     description: "Ultra Violet cured labels engineered for harsh outdoor environments, chemical storage, and sunny retail displays. UV inks dry instantaneously under UV light, forming a tough cross-linked polymer layer that prevents fading, scuffing, and chemical degradation.",
-    image: "/images/products/product-labels.jpg",
+    image: "/images/products/ultra-violet-labels.jpg",
     imageAlt: "High-gloss UV cured protective labels for industrial and outdoor applications",
     featured: false,
     applications: [
@@ -300,7 +300,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Glue-free shank jewelry tags, diamond packet labels, and luxury apparel swing tags.",
     description: "All-in-one jewelry and luxury merchandise tagging solution. Includes glue-free shank rat-tail and barbell jewelry tags, Surat-grade diamond sorting packet labels, and thick card garment swing tickets. Completely residue-free to protect gold, silver, and precious gems.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiNfiFA0aedp615cEXrsUhSZ7k7lYV6VVGskusH6xy_6U9qyVaXSr0ol78K4inqa0gDOHpjj5HJHOytOe9wanAHT7BMDtZymSb2boYFlFCgxmTDRIGIDq8lAT5KEtzPOVdhoG92TlPK-yXt4qSDBdHGRAYmnsWQaNg7N1-eURZUoaepwCxKgR_VUYfx3pv8ZY34RPaHAqxXKL3UTKcWZQZl6NwFqcJxmI4DNi7RYA5gtbWNG_ulGIY",
+    image: "/images/products/jewellery-tag-labels.jpg",
     imageAlt: "Jewelry rat tail and dumbbell barbell tags for gold rings and diamond packets",
     featured: true,
     applications: [
@@ -372,9 +372,9 @@ export const productsData: Product[] = [
     categoryName: "A4 Sheet Stock",
     badge: "SHEET STOCK",
     badgeType: "green",
-    shortDescription: "Self-adhesive A4 label sheets in 23 universal die-cut layouts for laser and inkjet printers.",
-    description: "Multipurpose A4 self-adhesive label sheets engineered for standard office laser printers, inkjet printers, and photocopiers. Available in 23 standard die-cut sizes with strong permanent gumming grip for parceling, shipping, file organization, and product labeling.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBMptVX_mMcsmqcFUIeyWjFlkcO_2IQ8biu4XnrLPhAOs2fH5B5gPVbfpwV_HURgvIWOsGOUP5CjGz-H1ArBtXJS7lm359ynNkwVPw8BjUK6dOW8mS7uc1yUOOzdEKOzAZJDNvRAc0vyO26JkZrkuCUgG57YUzlO_eaBfyFAIhkP9inRbPnoJ23EomDtFpTnZHM3d-bckIV4wUTNR9W7Dfp3B_63eQdOaCDxlJWiNqeYVIobKUGl9EL",
+    shortDescription: "Self-adhesive A4 label sheets in 24 universal die-cut layouts for laser and inkjet printers.",
+    description: "Multipurpose A4 self-adhesive label sheets engineered for standard office laser printers, inkjet printers, and photocopiers. Available in 24 standard die-cut sizes with strong permanent gumming grip for parceling, shipping, file organization, and product labeling.",
+    image: "/images/products/a4-sheet-labels.jpg",
     imageAlt: "Die-cut A4 self-adhesive sticker sheets fanned out on table",
     featured: true,
     applications: [
@@ -385,7 +385,7 @@ export const productsData: Product[] = [
     ],
     customisationOptions: [
       "Paper Variations: Bright White Chromo, High-Visibility Fluorescent, Transparent",
-      "Sheet Layouts: Available in 1 to 33 labels per A4 sheet (23 standard cuts)",
+      "Sheet Layouts: Available in 1 to 33 labels per A4 sheet (24 standard cuts)",
       "Pack Sizes: Retail packs of 100 sheets or wholesale carton packaging"
     ],
     features: [
@@ -438,7 +438,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "High-sensitivity thermal paper receipt rolls for retail cash registers and billing machines.",
     description: "Premium lint-free direct thermal paper rolls engineered for retail POS counters, billing printers, and credit card swipe machines. Produces dark, sharp black text and barcodes instantly without ink or ribbon.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsddaBtYnge5s3gUVNfkz4rpcmd5fp_sgEhtZa4y1p8dNDaA5TFJDu0zDQRSLzocA8jQmSPmw1LKyoJsVIo0w1RDhQUsLUSjuNFBWj7FG01YXvx0L83g-20utOMTSC7U0PIj29XPEuouvQ41XKSzM7GtZyssXBCzMc4cQ0JSXEvwRk2d1txMyjK3NrECbNmyGNLSVM44duO21MOuHiuOjOGHjo2jZlXZdd9vp9KIZVrSHPGaE1gTkx",
+    image: "/images/products/pos-thermal-billing-rolls.jpg",
     imageAlt: "Smooth thermal paper receipt rolls and POS billing rolls in warehouse",
     featured: true,
     applications: [
@@ -477,7 +477,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Long-wound, small-core thermal receipt rolls engineered for bank ATM cash machines.",
     description: "High-sensitivity thermal paper rolls manufactured specifically for bank ATM teller machines. Engineered with small core diameters and long roll lengths to reduce maintenance frequency and ensure jam-free receipt dispensing.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsddaBtYnge5s3gUVNfkz4rpcmd5fp_sgEhtZa4y1p8dNDaA5TFJDu0zDQRSLzocA8jQmSPmw1LKyoJsVIo0w1RDhQUsLUSjuNFBWj7FG01YXvx0L83g-20utOMTSC7U0PIj29XPEuouvQ41XKSzM7GtZyssXBCzMc4cQ0JSXEvwRk2d1txMyjK3NrECbNmyGNLSVM44duO21MOuHiuOjOGHjo2jZlXZdd9vp9KIZVrSHPGaE1gTkx",
+    image: "/images/products/atm-rolls.jpg",
     imageAlt: "Bank ATM thermal cash receipt rolls stacked in warehouse",
     featured: false,
     applications: [
@@ -552,7 +552,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Pre-printed receipt slips, transaction rolls, and cash register vouchers.",
     description: "Custom pre-printed thermal receipt rolls and slips featuring your company watermark, return policies, promotional coupons, or terms on the reverse side. Delivers a professional retail touch to customer checkout slips.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBsddaBtYnge5s3gUVNfkz4rpcmd5fp_sgEhtZa4y1p8dNDaA5TFJDu0zDQRSLzocA8jQmSPmw1LKyoJsVIo0w1RDhQUsLUSjuNFBWj7FG01YXvx0L83g-20utOMTSC7U0PIj29XPEuouvQ41XKSzM7GtZyssXBCzMc4cQ0JSXEvwRk2d1txMyjK3NrECbNmyGNLSVM44duO21MOuHiuOjOGHjo2jZlXZdd9vp9KIZVrSHPGaE1gTkx",
+    image: "/images/products/receipts-slips.jpg",
     imageAlt: "Pre-printed thermal billing receipt slips and transaction vouchers",
     featured: false,
     applications: [
@@ -659,7 +659,7 @@ export const productsData: Product[] = [
     badgeType: "red",
     shortDescription: "Custom 3D optical hologram stickers and tamper-evident VOID security seals.",
     description: "High-security brand protection labels featuring multi-channel 2D/3D optical holograms and tamper-evident adhesive transfer. When peeled, the label leaves a permanent 'VOID' or checkerboard pattern on the surface, preventing reuse.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3AyrxlUUj8fL6ZyrsmS5XCIO8NeJ9rFIpjcUk0Ye507N8eIfd1naX01EOMkW_9n0sGmxQ_TG385Qs9Zt1TqnPTkn-6OuZ9OR-fpJQl72pr1RqXLk2HXWx6Or4AsmRgqRzcoaGZV1pBSjUZPV2pkfYNxMlM-ybeZ-cGeNEJpnQUqFOWp917WAJDMDJQ2Y2iW7B6vPfDN8B63_thD4vtTa0poRJCOSHOQtSdx4QqYVj-m8MTYqjmdqK",
+    image: "/images/products/hologram-security-labels.jpg",
     imageAlt: "Holographic tamper-evident security labels with optical light reflection",
     featured: true,
     applications: [
@@ -695,7 +695,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Jumbo master reels of self-adhesive label stock for printing presses and converters.",
     description: "High-grade master rolls of pressure-sensitive label face papers including Chromo, Mirror Coated, and Direct Thermal papers with silicone glassine release backing. Supplied to printing presses and packaging converters.",
-    image: "/images/products/raw-paper-stock.jpg",
+    image: "/images/products/stock-load-papers.jpg",
     imageAlt: "Industrial jumbo rolls of self-adhesive label paper stock in factory",
     featured: false,
     applications: [
@@ -730,7 +730,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Water-activated gummed tape, self-adhesive masking papers, and industrial tape rolls.",
     description: "Industrial gumming tapes and specialty adhesive papers including reinforced water-activated gummed paper tape, self-adhesive brown packaging tapes, and converting adhesive films for carton sealing and box manufacturing.",
-    image: "/images/products/raw-paper-stock.jpg",
+    image: "/images/products/gumming-tappers.jpg",
     imageAlt: "Industrial rolls of gummed tape and adhesive packaging papers",
     featured: false,
     applications: [
@@ -764,7 +764,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Clear polyester (PET), white BoPP, and transparent laminating films for converters.",
     description: "Converting reels of transparent and metallized plastic polyester films (BoPET, BoPP, and PE). Ideal for label lamination, clear beverage container labeling, and tear-resistant synthetic tag conversion.",
-    image: "/images/products/raw-paper-stock.jpg",
+    image: "/images/products/plastic-polyester-films.jpg",
     imageAlt: "Clear transparent polyester laminating film reels in warehouse",
     featured: false,
     applications: [
@@ -799,9 +799,9 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "High-performance industrial and desktop thermal transfer barcode label printers.",
     description: "Authorized supply of commercial barcode label printers from global leaders (TSC, Zebra, Citizen, Godex). Designed for high-speed, 24/7 continuous printing of shipping labels, product tags, and serialized barcodes.",
-    image: "/images/products/dymo-brother-rolls.jpg",
+    image: "/images/products/barcode-printers.jpg",
     imageAlt: "Industrial desktop thermal barcode label printer and supplies",
-    featured: true,
+    featured: false,
     applications: [
       "Warehouse dispatch and pallet shipping label printing",
       "Retail checkout barcode tag and price sticker generation",
@@ -837,7 +837,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Compact electronic Dymo LabelWriter desktop printers for office and shipping labels.",
     description: "Compact desktop label printers from Dymo engineered for offices, pharmacies, and small businesses. Prints clean address labels, file folder tags, name badges, and barcodes directly from your PC or Mac without ink or toner.",
-    image: "/images/products/dymo-brother-rolls.jpg",
+    image: "/images/products/dymo-printers.jpg",
     imageAlt: "Dymo LabelWriter desktop compact electronic label printer",
     featured: false,
     applications: [
@@ -872,7 +872,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "High-speed compact electronic desktop smart label printers for business workflow.",
     description: "Smart digital label printers designed for fast on-demand labeling in laboratories, retail stores, and commercial offices. Features seamless wireless connectivity and automated label format detection.",
-    image: "/images/products/dymo-brother-rolls.jpg",
+    image: "/images/products/smart-label-printers.jpg",
     imageAlt: "Smart label printer desktop hardware for commercial business",
     featured: false,
     applications: [
@@ -906,7 +906,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Handheld corded and wireless 1D laser and 2D QR barcode scanners for retail and warehouse.",
     description: "High-speed handheld barcode scanners equipped with advanced optical decoders. Instantly reads 1D barcodes, high-density 2D QR codes, and digital smartphone screens even if the codes are scratched or poorly printed.",
-    image: "/images/products/barcode-labels.jpg",
+    image: "/images/products/barcode-scanners.jpg",
     imageAlt: "Handheld laser barcode scanner reading product barcodes",
     featured: false,
     applications: [
@@ -942,7 +942,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Rugged industrial handheld mobile computer terminals for warehouse inventory management.",
     description: "Enterprise-grade mobile computing terminals running Android OS with integrated high-speed 1D/2D barcode scan engines, physical numeric keypads, and touchscreens. Connects directly to ERP and WMS warehouse software over Wi-Fi and 4G.",
-    image: "/images/products/barcode-labels.jpg",
+    image: "/images/products/mobile-terminals.jpg",
     imageAlt: "Industrial mobile handheld terminal with barcode scanner and touchscreen",
     featured: false,
     applications: [
@@ -978,7 +978,7 @@ export const productsData: Product[] = [
     badgeType: "navy",
     shortDescription: "Solid-state CCD barcode scanners for high-reliability contact and near-contact scanning.",
     description: "Solid-state CCD barcode scanners with no moving internal parts. Offers exceptional long-term reliability and instant scanning of paper barcodes, laminated stickers, and computer display screens.",
-    image: "/images/products/barcode-labels.jpg",
+    image: "/images/products/barcode-ccd-scanners.jpg",
     imageAlt: "Barcode CCD contact scanner reading product barcodes",
     featured: false,
     applications: [
