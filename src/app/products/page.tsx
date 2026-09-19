@@ -108,12 +108,20 @@ export default function ProductsCataloguePage() {
           {filteredProducts.length > 0 ? (
             <StaggerGroup
               key={`${selectedCategory}-${searchQuery}`}
-              staggerInterval={0.06}
-              baseDelay={0.05}
+              threshold={0}
+              rootMargin="60px 0px 0px 0px"
+              staggerInterval={0.04}
+              baseDelay={0}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
             >
               {filteredProducts.map((product, idx) => (
-                <StaggerItem key={product.slug} index={idx} className="h-full">
+                <StaggerItem
+                  key={product.slug}
+                  index={idx}
+                  distance={16}
+                  duration={0.5}
+                  className="h-full"
+                >
                   <ProductCard product={product} index={idx} />
                 </StaggerItem>
               ))}
@@ -144,7 +152,9 @@ export default function ProductsCataloguePage() {
           {/* Bottom Custom Request Card */}
           <ScrollReveal
             direction="up"
-            distance={24}
+            distance={20}
+            threshold={0}
+            rootMargin="60px 0px 0px 0px"
             className="mt-16 sm:mt-20 rounded-2xl bg-[#FFFDF9] p-8 sm:p-10 lg:p-12 shadow-md border border-cream-border flex flex-col md:flex-row items-center justify-between gap-8"
           >
             <div className="flex flex-col gap-2 max-w-xl">
