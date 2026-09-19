@@ -1,26 +1,505 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream-bg: #FAF6F0;
+  --color-cream-surface: #F8F4EC;
+  --color-cream-card: #FFFDF9;
+  --color-cream-muted: #F3ECE0;
+  --color-cream-subtle: #EFE7DA;
+  --color-cream-border: #E5DBCA;
+  --color-cream-border-dark: #DDD2BE;
+  --color-brand-navy: #0C2340;
+  --color-brand-navy-dark: #0A192F;
+  --color-brand-navy-deep: #061325;
+  --color-brand-navy-light: #17345C;
+  --color-brand-red: #C8102E;
+  --color-brand-red-hover: #B00D27;
+  --color-brand-green: #236842;
+  --color-brand-green-light: #2D6A4F;
+  --color-brand-green-subtle: #E9F4ED;
+  --color-brand-charcoal: #1E232A;
+  --color-brand-charcoal-muted: #4A5568;
+  --color-brand-gold: #C5A059;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --cream-bg: #FAF6F0;
+    --cream-surface: #F8F4EC;
+    --cream-card: #FFFDF9;
+    --cream-muted: #F3ECE0;
+    --cream-subtle: #EFE7DA;
+    --cream-border: #E5DBCA;
+    --cream-border-dark: #DDD2BE;
+    --brand-navy: #0C2340;
+    --brand-navy-dark: #0A192F;
+    --brand-navy-deep: #061325;
+    --brand-navy-light: #17345C;
+    --brand-red: #C8102E;
+    --brand-red-hover: #B00D27;
+    --brand-green: #236842;
+    --brand-green-light: #2D6A4F;
+    --brand-green-subtle: #E9F4ED;
+    --brand-charcoal: #1E232A;
+    --brand-charcoal-muted: #4A5568;
+    --brand-gold: #C5A059;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6F0;
+    color: #1E232A;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  
+  main > :last-child {
+    margin-bottom: 0 !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Stitch Utility Classes */
+.bg-cream-bg { background-color: #FAF6F0; }
+.bg-cream-surface { background-color: #F8F4EC; }
+.bg-cream-card { background-color: #FFFDF9; }
+.bg-cream-muted { background-color: #F3ECE0; }
+.bg-cream-subtle { background-color: #EFE7DA; }
+.bg-cream-border { background-color: #E5DBCA; }
+
+.bg-brand-navy { background-color: #0C2340; }
+.bg-brand-navy-dark { background-color: #0A192F; }
+.bg-brand-navy-deep { background-color: #061325; }
+.bg-brand-navy-light { background-color: #17345C; }
+.bg-brand-red { background-color: #C8102E; }
+.bg-brand-red-hover:hover { background-color: #B00D27; }
+.bg-brand-green { background-color: #236842; }
+.bg-brand-green-light { background-color: #2D6A4F; }
+.bg-brand-green-subtle { background-color: #E9F4ED; }
+.bg-brand-gold { background-color: #E5B869; }
+
+.text-brand-navy { color: #0C2340; }
+.text-brand-navy-dark { color: #0A192F; }
+.text-brand-red { color: #C8102E; }
+.text-brand-green { color: #236842; }
+.text-brand-charcoal { color: #1E232A; }
+.text-brand-charcoal-muted { color: #4A5568; }
+.text-brand-gold { color: #C5A059; }
+.text-cream-border { color: #E5DBCA; }
+.text-cream-border-dark { color: #DDD2BE; }
+
+.border-cream-border { border-color: #E5DBCA; }
+.border-cream-border-dark { border-color: #DDD2BE; }
+.border-brand-navy-light { border-color: #17345C; }
+
+/* Font Family definitions matching the 2-Font System (Plus Jakarta Sans & Manrope) */
+.font-headline-xl {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 52px;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .font-headline-xl {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .font-headline-lg {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .font-headline-md {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+/* Manrope Body & Description Typography */
+.font-body-lg {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .font-body-lg {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.font-body-md {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.012em;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .font-body-md {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.font-body-sm {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .font-body-sm {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+}
+
+/* Technical Specification & Badge Tags (Plus Jakarta Sans) */
+.font-label-mono {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.font-label-tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* Material Symbols font icon sizing */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+
+/* Engineering Crosshair & Dot Grid Patterns */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(229, 219, 202, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 219, 202, 0.4) 1px, transparent 1px);
+}
+
+.bg-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(12, 35, 64, 0.08) 1.5px, transparent 1.5px);
+}
+
+.bg-dot-dark {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
+}
+
+/* Our Values Cards & Icons Hover States */
+.icon-val-trust {
+  background-color: rgba(12, 35, 64, 0.06);
+  border: 1px solid rgba(12, 35, 64, 0.15);
+  color: #0C2340;
+}
+.group:hover .icon-val-trust {
+  background-color: #0C2340 !important;
+  color: #FFFFFF !important;
+  border-color: #0C2340 !important;
+}
+
+.icon-val-quality {
+  background-color: rgba(200, 16, 46, 0.06);
+  border: 1px solid rgba(200, 16, 46, 0.15);
+  color: #C8102E;
+}
+.group:hover .icon-val-quality {
+  background-color: #C8102E !important;
+  color: #FFFFFF !important;
+  border-color: #C8102E !important;
+}
+
+.icon-val-relationship {
+  background-color: rgba(35, 104, 66, 0.06);
+  border: 1px solid rgba(35, 104, 66, 0.15);
+  color: #236842;
+}
+.group:hover .icon-val-relationship {
+  background-color: #236842 !important;
+  color: #FFFFFF !important;
+  border-color: #236842 !important;
+}
+
+.icon-val-growth {
+  background-color: rgba(180, 83, 9, 0.06);
+  border: 1px solid rgba(180, 83, 9, 0.15);
+  color: #B45309;
+}
+.group:hover .icon-val-growth {
+  background-color: #B45309 !important;
+  color: #FFFFFF !important;
+  border-color: #B45309 !important;
+}
+
+.card-val-trust:hover {
+  border-color: rgba(12, 35, 64, 0.35) !important;
+}
+.card-val-quality:hover {
+  border-color: rgba(200, 16, 46, 0.35) !important;
+}
+.card-val-relationship:hover {
+  border-color: rgba(35, 104, 66, 0.35) !important;
+}
+.card-val-growth:hover {
+  border-color: rgba(180, 83, 9, 0.35) !important;
+}
+
+.group:hover .num-val-trust {
+  color: #0C2340 !important;
+}
+.group:hover .num-val-quality {
+  color: #C8102E !important;
+}
+.group:hover .num-val-relationship {
+  color: #236842 !important;
+}
+.group:hover .num-val-growth {
+  color: #B45309 !important;
+}
+
+/* ==========================================================================
+   Global Button & Interactive Link System (Consistent Premium Interaction)
+   ========================================================================== */
+
+/* Base button defaults */
+.btn-primary,
+.btn-red,
+.btn-navy,
+.btn-secondary,
+.btn-outline,
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 200ms cubic-bezier(0.16, 1, 0.3, 1),
+              color 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+/* 1. Primary Red Button */
+.btn-primary,
+.btn-red {
+  background-color: #C8102E;
+  color: #FFFFFF !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary:hover,
+.btn-red:hover {
+  background-color: #B00D27;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px rgba(200, 16, 46, 0.28);
+}
+
+.btn-primary:active,
+.btn-red:active {
+  transform: translateY(0);
+  background-color: #A00C23;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* 2. Navy Button */
+.btn-navy {
+  background-color: #0C2340;
+  color: #FAF6F0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.btn-navy:hover {
+  background-color: #17345C;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px rgba(12, 35, 64, 0.28);
+}
+
+.btn-navy:active {
+  transform: translateY(0);
+  background-color: #0A192F;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Secondary / Light Outline Button */
+.btn-secondary,
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #E5DBCA;
+  color: #0C2340 !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+  background-color: #F8F4EC;
+  border-color: #0C2340;
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px rgba(12, 35, 64, 0.08);
+}
+
+.btn-secondary:active,
+.btn-outline:active {
+  transform: translateY(0);
+  background-color: #EFE7DA;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* 4. Dark Section White Outline Button */
+.btn-outline-white {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-white:active {
+  transform: translateY(0);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Arrow & Trailing Icon Micro-Interactions inside Buttons */
+.btn-icon-arrow,
+.btn-primary > .material-symbols-outlined:last-child,
+.btn-red > .material-symbols-outlined:last-child,
+.btn-navy > .material-symbols-outlined:last-child,
+.btn-secondary > .material-symbols-outlined:last-child,
+.btn-outline > .material-symbols-outlined:last-child {
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-block;
+}
+
+.btn-primary:hover > .material-symbols-outlined:last-child,
+.btn-red:hover > .material-symbols-outlined:last-child,
+.btn-navy:hover > .material-symbols-outlined:last-child,
+.btn-secondary:hover > .material-symbols-outlined:last-child,
+.btn-outline:hover > .material-symbols-outlined:last-child,
+.btn-primary:hover .btn-icon-arrow,
+.btn-red:hover .btn-icon-arrow,
+.btn-navy:hover .btn-icon-arrow,
+.btn-secondary:hover .btn-icon-arrow,
+.btn-outline:hover .btn-icon-arrow {
+  transform: translateX(2.5px);
+}
+
+/* Accessibility & Focus-Visible */
+.btn-primary:focus-visible,
+.btn-red:focus-visible,
+.btn-navy:focus-visible,
+.btn-secondary:focus-visible,
+.btn-outline:focus-visible,
+.btn-outline-white:focus-visible,
+button:focus-visible,
+a.btn-primary:focus-visible,
+a.btn-navy:focus-visible {
+  outline: 2px solid #0C2340 !important;
+  outline-offset: 2px !important;
+}
+
+/* Disabled State */
+.btn-primary:disabled,
+.btn-red:disabled,
+.btn-navy:disabled,
+.btn-secondary:disabled,
+.btn-outline:disabled,
+.btn-outline-white:disabled,
+button:disabled {
+  opacity: 0.55 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+/* Accessibility & Reduced Motion Overrides */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
