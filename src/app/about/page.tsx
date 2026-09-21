@@ -47,7 +47,7 @@ export default function AboutPage() {
                 containerClassName="group rounded-2xl bg-white shadow-[0_12px_36px_rgba(12,35,64,0.07)] border border-stone-200/90 aspect-[4/3]"
               >
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnuoNF8LM2gluuSawAHBeFRE9f0P68swI-LYS7TvfS-Co9IBrvCUA_sZ57cFUC4mIkySb-47LLgsDSsU1racE-UbUzIQO3RGLZw8qTc7hoBr8m-ZER8v4eHbEPjWBL4XGYUx_y1nvJriOgkaAgdk9YM6aBj_VZ1BUUZXII39X9Ov_I2uZBGx92dYGPJ2_euhShNZEjU6B7IB7tkHRwY6WCjlUzRAv9N4DLN8lmgY1AcWSri6-gY9iE"
+                  src="/images/facility/surat-plant.jpg"
                   alt="Industrial label slitting and roll winding manufacturing facility in Surat"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                 />

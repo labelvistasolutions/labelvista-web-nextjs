@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Labelvista Solutions | Custom Label Manufacturer & Printing",
   description: "High-quality self-adhesive labels, thermal rolls, A4 label sheets, and custom color printing. Made with care in Surat, Gujarat, India.",
   keywords: ["Label manufacturing", "Barcode labels", "Thermal paper rolls", "A4 label sheets", "Flexo UV printing", "Jewellery tags", "Labelvista", "Surat Gujarat India"],
+  icons: {
+    icon: "/brand/labelvista-mark.png",
+    shortcut: "/brand/labelvista-mark.png",
+    apple: "/brand/labelvista-mark.png",
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/brand/labelvista-mark.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/brand/labelvista-mark.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

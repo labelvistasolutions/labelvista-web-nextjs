@@ -26,7 +26,7 @@ export const printingCapabilities: PrintingCapability[] = [
       "Options for shiny foil, lamination, and back-side printing",
       "Exact cutting control with ±0.05 mm accuracy"
     ],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC5CAdrKglL7bDyOoOAbpMHsTduba5YduTC-33l2HiSIx3PBq88CPAkyEeHwvHNC-fnD7drWvg-F84TMYZnkpLbmeBwGIhUpPSOoCKHixML_y6Jjea-Q3IRDX6nQVvYNMz1sr7P03tURpaQVB9KXZ7CS_xkZdoSpEn1XigjVpVLTRrrHB18Z-kcnXxu4vPDQme1bKT_tDvs-KvOAQjylkaFMo8XtD2bxMuc4YCEHeYkmR4WNIHoK549",
+    image: "/images/printing/flexo-uv-press.jpg",
     imageAlt: "High-tech multi-station industrial flexographic UV label printing press operating at high speed"
   },
   {
@@ -77,7 +77,7 @@ export const printingCapabilities: PrintingCapability[] = [
       "Supports serial numbers and QR codes for tracking",
       "Tamper-evident materials that tear upon removal"
     ],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3AyrxlUUj8fL6ZyrsmS5XCIO8NeJ9rFIpjcUk0Ye507N8eIfd1naX01EOMkW_9n0sGmxQ_TG385Qs9Zt1TqnPTkn-6OuZ9OR-fpJQl72pr1RqXLk2HXWx6Or4AsmRgqRzcoaGZV1pBSjUZPV2pkfYNxMlM-ybeZ-cGeNEJpnQUqFOWp917WAJDMDJQ2Y2iW7B6vPfDN8B63_thD4vtTa0poRJCOSHOQtSdx4QqYVj-m8MTYqjmdqK",
+    image: "/images/printing/security-hologram.jpg",
     imageAlt: "Tamper evident holographic security seal"
   }
 ];

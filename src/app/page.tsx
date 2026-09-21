@@ -102,7 +102,7 @@ export default function HomePage() {
               >
                 <div className="relative w-full h-full overflow-hidden">
                   <img
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1XfhRZAhbvVEVBrNJVX8e_GY6rNSMWHdmBigwLj0PFcSXV6qjv3OsEi1OLimb7VJClYR7QAo5-Irg4VvEbBiCqOiPEIbK0CI7qPe_dspoC90MbjvC4hspwVEDC5nPlqURx_HyiAfmrypvM0hhna49sYmNYAgiEAQKUltcNp-prRdVn3la6YWcMkjp-qjIGBKvVQ9JXzscST7uck9okgStnwmbFvEMv6z18qB8XZ4hZ0jNqZdoxXIf6cYLc"
+                    src="/images/hero-manufacturing.jpg"
                     alt="Industrial precision roll label manufacturing and flexographic printing facility"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <img
                   className="w-full h-full object-cover"
                   alt="Roll label manufacturing and finishing in factory"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnuoNF8LM2gluuSawAHBeFRE9f0P68swI-LYS7TvfS-Co9IBrvCUA_sZ57cFUC4mIkySb-47LLgsDSsU1racE-UbUzIQO3RGLZw8qTc7hoBr8m-ZER8v4eHbEPjWBL4XGYUx_y1nvJriOgkaAgdk9YM6aBj_VZ1BUUZXII39X9Ov_I2uZBGx92dYGPJ2_euhShNZEjU6B7IB7tkHRwY6WCjlUzRAv9N4DLN8lmgY1AcWSri6-gY9iE"
+                  src="/images/facility/surat-plant.jpg"
                 />
               </ImageReveal>
             </div>
@@ -474,7 +474,7 @@ export default function HomePage() {
                 <img
                   className="w-full h-full object-cover hover:scale-[1.025] transition-transform duration-500 ease-out"
                   alt="Industrial flexographic UV label printing press operating at high speed"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5CAdrKglL7bDyOoOAbpMHsTduba5YduTC-33l2HiSIx3PBq88CPAkyEeHwvHNC-fnD7drWvg-F84TMYZnkpLbmeBwGIhUpPSOoCKHixML_y6Jjea-Q3IRDX6nQVvYNMz1sr7P03tURpaQVB9KXZ7CS_xkZdoSpEn1XigjVpVLTRrrHB18Z-kcnXxu4vPDQme1bKT_tDvs-KvOAQjylkaFMo8XtD2bxMuc4YCEHeYkmR4WNIHoK549"
+                  src="/images/printing/flexo-uv-press.jpg"
                 />
                 <div className="absolute bottom-4 left-4 bg-brand-navy-dark/90 backdrop-blur-md px-3.5 py-2 rounded-lg flex items-center gap-2 border border-white/15 shadow-md">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-green shrink-0"></span>
