@@ -309,74 +309,52 @@ export default function AboutPage() {
 
             {/* Secondary Registrations (4 items in a 2x2 grid) */}
             <StaggerGroup staggerInterval={0.08} baseDelay={0.15} className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-              {/* GST */}
+              {/* IEC Code */}
               <StaggerItem index={0}>
                 <div className="bg-white rounded-xl border border-stone-200/80 p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-brand-navy/30 hover:shadow-md transition-all duration-300 h-full">
                   <div className="flex items-center justify-between mb-3">
                     <span className="font-label-tag text-[11px] font-bold text-stone-400 uppercase tracking-wider">
-                      Tax Registration
+                      Trade Certification
                     </span>
                     <div className="w-8 h-8 rounded-md bg-brand-navy/5 flex items-center justify-center text-brand-navy">
-                      <span className="material-symbols-outlined text-[18px]">receipt_long</span>
+                      <span className="material-symbols-outlined text-[18px]">public</span>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-headline-sm text-[16px] text-brand-navy font-bold mb-1">
-                      GST Registered
+                      IEC Code Certified
                     </h4>
-                    <p className="font-label-tag text-[12px] text-brand-navy font-extrabold tracking-wider bg-stone-50 px-2.5 py-1 rounded inline-block border border-stone-200/60">
-                      24AANFL3887H1ZV
+                    <p className="font-body-sm text-[13px] text-brand-charcoal-muted">
+                      National &amp; International Import-Export capability
                     </p>
                   </div>
                 </div>
               </StaggerItem>
 
-              {/* PAN */}
+              {/* Company Trademark */}
               <StaggerItem index={1}>
                 <div className="bg-white rounded-xl border border-stone-200/80 p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-brand-navy/30 hover:shadow-md transition-all duration-300 h-full">
                   <div className="flex items-center justify-between mb-3">
                     <span className="font-label-tag text-[11px] font-bold text-stone-400 uppercase tracking-wider">
-                      Business Identity
+                      Brand Identity
                     </span>
                     <div className="w-8 h-8 rounded-md bg-brand-navy/5 flex items-center justify-center text-brand-navy">
-                      <span className="material-symbols-outlined text-[18px]">badge</span>
+                      <span className="material-symbols-outlined text-[18px]">branding_watermark</span>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-headline-sm text-[16px] text-brand-navy font-bold mb-1">
-                      PAN Certified
-                    </h4>
-                    <p className="font-label-tag text-[12px] text-brand-navy font-extrabold tracking-wider bg-stone-50 px-2.5 py-1 rounded inline-block border border-stone-200/60">
-                      AANFL3887H
-                    </p>
-                  </div>
-                </div>
-              </StaggerItem>
-
-              {/* 21 CFR */}
-              <StaggerItem index={2}>
-                <div className="bg-white rounded-xl border border-stone-200/80 p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-brand-green/30 hover:shadow-md transition-all duration-300 h-full">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="font-label-tag text-[11px] font-bold text-stone-400 uppercase tracking-wider">
-                      Facility Compliance
-                    </span>
-                    <div className="w-8 h-8 rounded-md bg-brand-green/10 flex items-center justify-center text-brand-green">
-                      <span className="material-symbols-outlined text-[18px]">health_and_safety</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-headline-sm text-[16px] text-brand-navy font-bold mb-1">
-                      Facility Spec 21 CFR Compliant
+                      Registered Trademark
                     </h4>
                     <p className="font-body-sm text-[13px] text-brand-charcoal-muted">
-                      Adhesive &amp; Clean Room Standards
+                      Protected brand identity &amp; product standards
                     </p>
                   </div>
                 </div>
               </StaggerItem>
 
               {/* Udyog Aadhar */}
-              <StaggerItem index={3}>
+              <StaggerItem index={2}>
                 <div className="bg-white rounded-xl border border-stone-200/80 p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-amber-600/30 hover:shadow-md transition-all duration-300 h-full">
                   <div className="flex items-center justify-between mb-3">
                     <span className="font-label-tag text-[11px] font-bold text-stone-400 uppercase tracking-wider">
@@ -391,7 +369,29 @@ export default function AboutPage() {
                       Udyog Aadhar Certified
                     </h4>
                     <p className="font-body-sm text-[13px] text-brand-charcoal-muted">
-                      Government Recognized Enterprise
+                      Government Recognized MSME Enterprise
+                    </p>
+                  </div>
+                </div>
+              </StaggerItem>
+
+              {/* Quality Testing */}
+              <StaggerItem index={3}>
+                <div className="bg-white rounded-xl border border-stone-200/80 p-5 sm:p-6 flex flex-col justify-between shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:border-brand-green/30 hover:shadow-md transition-all duration-300 h-full">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-label-tag text-[11px] font-bold text-stone-400 uppercase tracking-wider">
+                      Batch Inspection
+                    </span>
+                    <div className="w-8 h-8 rounded-md bg-brand-green/10 flex items-center justify-center text-brand-green">
+                      <span className="material-symbols-outlined text-[18px]">fact_check</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-headline-sm text-[16px] text-brand-navy font-bold mb-1">
+                      100% Pre-Shipment Tested
+                    </h4>
+                    <p className="font-body-sm text-[13px] text-brand-charcoal-muted">
+                      Adhesion strength, clean edges, and scan testing
                     </p>
                   </div>
                 </div>

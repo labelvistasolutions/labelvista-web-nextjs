@@ -154,11 +154,9 @@ export default function Footer() {
             Copyright © {new Date().getFullYear()} Labelvista Solutions. All rights reserved.
           </div>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3 text-slate-400 text-center sm:text-right">
-            <span>GST: 24AANFL3887H1ZV</span>
+            <span>Surat, Gujarat, India</span>
             <span className="text-slate-600 hidden sm:inline">•</span>
-            <span>PAN: AANFL3887H</span>
-            <span className="text-slate-600 hidden sm:inline">•</span>
-            <span>ISO 9001:2015</span>
+            <span>ISO 9001:2015 Certified</span>
           </div>
         </div>
       </div>

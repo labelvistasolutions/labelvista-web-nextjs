@@ -21,10 +21,6 @@ export interface CompanyProfile {
     partnerPhones: string[];
     website: string;
   };
-  registration: {
-    gst: string;
-    pan: string;
-  };
   bankDetails: {
     accountNumber: string;
     ifsc: string;
@@ -58,10 +54,6 @@ export const companyData: CompanyProfile = {
     partnerPhones: ["+91 98987 06129", "+91 99245 92000"],
     website: "www.labelvista.com",
   },
-  registration: {
-    gst: "24AANFL3887H1ZV",
-    pan: "AANFL3887H",
-  },
   bankDetails: {
     accountNumber: "538705500244",
     ifsc: "ICIC0005387",
@@ -70,10 +62,9 @@ export const companyData: CompanyProfile = {
   },
   certifications: [
     "ISO 9001:2015 Quality Certified",
-    "GST Registered (24AANFL3887H1ZV)",
-    "PAN Certified (AANFL3887H)",
-    "Facility Spec 21 CFR Compliant",
-    "Udyog Aadhar Certified",
+    "IEC Code (Import-Export Certified)",
+    "Udyog Aadhar Certified (MSME)",
+    "Registered Company Trademark",
   ],
   capabilities: [
     "High-Speed Rotary Die-Cutting",

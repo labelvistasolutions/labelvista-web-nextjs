@@ -39,11 +39,11 @@ function ContactFormContent() {
       (formData.category === "custom"
         ? "Custom Size"
         : formData.category === "industry"
-        ? "Industry Specific"
-        : formData.category);
+          ? "Industry Specific"
+          : formData.category);
 
     const subject = `Quote Request: ${formData.productName ? `${formData.productName} - ` : ""}${formData.fullName}${formData.company ? ` (${formData.company})` : ""}`;
-    
+
     const body = `Hello Labelvista Solutions Team,\n\nI would like to request a quote with the following requirements:\n\n` +
       `----------------------------------------\n` +
       `CUSTOMER DETAILS\n` +
@@ -146,14 +146,10 @@ function ContactFormContent() {
             </div>
           </div>
 
-          <div className="pt-4 border-t border-cream-border/60 flex flex-col gap-1 font-label-mono text-[11px] text-brand-charcoal-muted uppercase tracking-wider">
+          <div className="pt-4 border-t border-cream-border/60 flex flex-col gap-1.5 font-label-mono text-[11px] text-brand-charcoal-muted uppercase tracking-wider">
             <div className="flex items-center justify-between">
-              <span>GSTIN:</span>
-              <span className="font-bold text-brand-navy">24AANFL3887H1ZV</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span>PAN:</span>
-              <span className="font-bold text-brand-navy">AANFL3887H</span>
+              <span>Certification:</span>
+              <span className="font-bold text-brand-navy">ISO 9001:2015 Certified</span>
             </div>
           </div>
         </div>
