@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Labelvista Solutions | Custom Label Manufacturer & Printing",
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
