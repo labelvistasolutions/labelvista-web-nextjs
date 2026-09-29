@@ -95,6 +95,24 @@
 .border-cream-border-dark { border-color: #DDD2BE; }
 .border-brand-navy-light { border-color: #17345C; }
 
+/* ==========================================================================
+   Controlled 3-Color Gradient for Dark Sections
+   1. Dominant Deep Navy (80-90% overall surface & entire center 60%)
+   2. Subtle Atmospheric White Glow (Positioned at Top-Left corner 0% 0%)
+   3. Labelvista Red (#C8102E) Accent (Soft transition at bottom-right 100% 100%)
+   ========================================================================== */
+.bg-gradient-navy-red,
+.bg-gradient-navy-black,
+.bg-gradient-navy-darker,
+.bg-gradient-navy-green,
+.bg-gradient-dark-brand {
+  background:
+    radial-gradient(ellipse 50% 45% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(220, 235, 255, 0.05) 35%, transparent 65%),
+    radial-gradient(ellipse 55% 55% at 100% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(120, 12, 28, 0.09) 45%, transparent 70%),
+    linear-gradient(135deg, #0A1C33 5%, #071527 50%, #16070E 95%);
+  background-color: #071527;
+}
+
 /* Font Family definitions matching the 2-Font System (Plus Jakarta Sans & Manrope) */
 .font-headline-xl {
   font-family: 'Plus Jakarta Sans', sans-serif;

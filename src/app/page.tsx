@@ -108,7 +108,7 @@ export default function HomePage() {
                   />
 
                   {/* Depth Vignette & Subtle Lighting Overlay on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-navy-dark/30 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-navy-dark/30 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                   {/* Subtle Refined Technical Specification Tag */}
                   <div className="absolute bottom-3.5 left-3.5 bg-brand-navy-dark/85 group-hover:bg-brand-navy-dark/95 backdrop-blur-sm px-3 py-1.5 rounded text-[#FAF6F0] flex items-center gap-2 border border-white/10 shadow-sm transition-all duration-300">
@@ -248,7 +248,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 4: WHY LABELVISTA */}
-      <section className="w-full bg-[#071527] text-white py-18 sm:py-24 border-y border-white/10 relative overflow-hidden">
+      <section className="w-full bg-gradient-navy-red text-white py-18 sm:py-24 border-y border-white/10 relative overflow-hidden">
         {/* Extremely Subtle Background Grid Pattern */}
         <div className="absolute inset-0 bg-grid-dark opacity-20 pointer-events-none"></div>
 
@@ -379,7 +379,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 6: PRINTING / MANUFACTURING */}
-      <section className="w-full bg-[#071527] text-[#FAF6F0] py-18 sm:py-24 lg:py-28 border-y border-white/10 relative overflow-hidden">
+      <section className="w-full bg-gradient-navy-red text-[#FAF6F0] py-18 sm:py-24 lg:py-28 border-y border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-dark opacity-15 pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
@@ -494,7 +494,7 @@ export default function HomePage() {
           <ScrollReveal
             direction="up"
             distance={28}
-            className="rounded-3xl bg-brand-navy-dark text-white p-10 sm:p-14 lg:p-20 relative overflow-hidden shadow-2xl border border-white/10"
+            className="rounded-3xl bg-gradient-navy-red text-white p-10 sm:p-14 lg:p-20 relative overflow-hidden shadow-2xl border border-white/10"
           >
             <div className="absolute inset-0 bg-grid-dark opacity-30 pointer-events-none"></div>
 
@@ -604,7 +604,7 @@ export default function HomePage() {
           <ScrollReveal
             direction="up"
             distance={24}
-            className="rounded-3xl bg-[#071527] text-white p-8 sm:p-12 lg:p-14 shadow-xl border border-white/12 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10"
+            className="rounded-3xl bg-gradient-navy-red text-white p-8 sm:p-12 lg:p-14 shadow-xl border border-white/12 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10"
           >
             <div className="absolute inset-0 bg-grid-dark opacity-15 pointer-events-none"></div>
 

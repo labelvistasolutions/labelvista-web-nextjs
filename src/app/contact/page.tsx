@@ -159,7 +159,7 @@ function ContactFormContent() {
         </div>
 
         {/* Quality Assurance Box */}
-        <div className="p-7 sm:p-8 rounded-2xl bg-brand-navy-dark text-white border border-brand-navy-light/40 shadow-lg flex flex-col gap-3.5">
+        <div className="p-7 sm:p-8 rounded-2xl bg-gradient-navy-red text-white border border-brand-navy-light/40 shadow-lg flex flex-col gap-3.5">
           <div className="flex items-center gap-2.5 text-brand-green">
             <span className="material-symbols-outlined text-[20px]">verified</span>
             <span className="font-label-tag text-xs uppercase tracking-wider font-bold">

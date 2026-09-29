@@ -6,7 +6,7 @@ import { StaggerGroup, StaggerItem } from "@/components/motion/StaggerGroup";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#071527] text-[#FAF6F0] pt-12 sm:pt-14 lg:pt-16 border-t border-white/10 relative overflow-hidden">
+    <footer className="w-full bg-gradient-navy-red text-[#FAF6F0] pt-12 sm:pt-14 lg:pt-16 border-t border-white/10 relative overflow-hidden">
       {/* Subtle Engineering Grid Background */}
       <div className="absolute inset-0 bg-grid-dark opacity-10 pointer-events-none"></div>
 

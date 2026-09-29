@@ -53,7 +53,7 @@ export default function AboutPage() {
                 />
 
                 {/* Integrated Facility Overlay */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-navy-dark/95 via-brand-navy-dark/75 to-transparent pt-14 pb-5 px-6 flex items-center justify-between text-white">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-navy-dark/95 to-transparent pt-14 pb-5 px-6 flex items-center justify-between text-white">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center text-brand-green">
                       <span className="material-symbols-outlined text-[20px]">precision_manufacturing</span>

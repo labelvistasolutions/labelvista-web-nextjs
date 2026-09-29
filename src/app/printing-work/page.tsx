@@ -53,7 +53,7 @@ export default function PrintingWorkPage() {
               <section
                 key={cap.id}
                 id={cap.id}
-                className="w-full py-16 sm:py-20 lg:py-24 bg-[#071527] text-white border-y border-white/10 relative overflow-hidden"
+                className="w-full py-16 sm:py-20 lg:py-24 bg-gradient-navy-red text-white border-y border-white/10 relative overflow-hidden"
               >
                 {/* Subtle dark grid background */}
                 <div className="absolute inset-0 bg-dot-dark opacity-35 pointer-events-none" />
@@ -230,7 +230,7 @@ export default function PrintingWorkPage() {
       </div>
 
       {/* Technical Precision Summary & Engineering Specifications */}
-      <section className="w-full bg-[#0A192F] text-white py-18 sm:py-22 lg:py-26 border-t border-white/10 relative overflow-hidden">
+      <section className="w-full bg-gradient-navy-red text-white py-18 sm:py-22 lg:py-26 border-t border-white/10 relative overflow-hidden">
         {/* Engineering dot background */}
         <div className="absolute inset-0 bg-dot-dark opacity-30 pointer-events-none" />
 
