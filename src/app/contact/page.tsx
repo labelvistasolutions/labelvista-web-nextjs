@@ -4,6 +4,7 @@ import React, { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { productCategories } from "@/data/categories";
 import ScrollReveal from "@/components/motion/ScrollReveal";
+import ContactMap from "@/components/ui/ContactMap";
 
 function ContactFormContent() {
   const searchParams = useSearchParams();
@@ -407,6 +408,9 @@ export default function ContactPage() {
           </Suspense>
         </div>
       </section>
+
+      {/* Large Interactive Location Map Section */}
+      <ContactMap />
     </div>
   );
 }
