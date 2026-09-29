@@ -268,6 +268,15 @@
   font-weight: 700;
 }
 
+/* Pure Font Family Utilities (without font-size/line-height override side effects) */
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-body {
+  font-family: 'Manrope', sans-serif;
+}
+
 /* Material Symbols font icon sizing */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
