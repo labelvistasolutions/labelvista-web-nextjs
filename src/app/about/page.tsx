@@ -15,7 +15,7 @@ export default function AboutPage() {
     <div className="flex flex-col w-full bg-[#FAF6F0]">
       {/* Page Header */}
       <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
@@ -36,7 +36,7 @@ export default function AboutPage() {
         {/* Subtle background industrial pattern */}
         <div className="absolute inset-0 bg-dot-pattern opacity-35 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="relative site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Visual Left */}
             <div className="lg:col-span-6 relative">
@@ -129,7 +129,7 @@ export default function AboutPage() {
 
       {/* Our Values */}
       <section className="w-full bg-[#EFE7DA] py-18 sm:py-22 lg:py-26 border-y border-cream-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           {/* Section Heading */}
           <ScrollReveal direction="up" distance={20} className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14 sm:mb-16">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-brand-navy/10 font-label-tag text-[12px] uppercase tracking-widest text-brand-navy font-bold mb-3">
@@ -258,7 +258,7 @@ export default function AboutPage() {
         {/* Subtle engineering dot pattern */}
         <div className="absolute inset-0 bg-dot-pattern opacity-25 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="relative site-container">
           {/* Section Heading */}
           <ScrollReveal direction="up" distance={20} className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12 sm:mb-16">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-brand-green/10 font-label-tag text-[12px] uppercase tracking-widest text-brand-green font-bold mb-3">

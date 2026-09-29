@@ -10,7 +10,7 @@ export default function Footer() {
       {/* Subtle Engineering Grid Background */}
       <div className="absolute inset-0 bg-grid-dark opacity-10 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+      <div className="site-container relative z-10">
         <StaggerGroup
           staggerInterval={0.07}
           baseDelay={0.05}
@@ -149,7 +149,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10 relative z-10 bg-black/25">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 font-label-mono text-[11px] tracking-wider uppercase">
+        <div className="site-container py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 font-label-mono text-[11px] tracking-wider uppercase">
           <div>
             Copyright © {new Date().getFullYear()} Labelvista Solutions. All rights reserved.
           </div>

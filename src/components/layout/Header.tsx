@@ -44,7 +44,7 @@ export default function Header() {
         scrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-6">
+      <div className="h-20 site-container flex items-center justify-between gap-6">
         {/* Brand Logo */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center group">

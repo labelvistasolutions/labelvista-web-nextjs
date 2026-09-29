@@ -54,7 +54,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     <div className="flex flex-col w-full bg-[#FAF6F0]">
       {/* Breadcrumb & Header */}
       <section className="w-full bg-[#FAF6F0] border-b border-cream-border py-10 sm:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" className="mb-5">
             <ol className="flex flex-wrap items-center gap-1.5 sm:gap-2 font-body-sm text-[13px] text-brand-charcoal-muted">
@@ -115,7 +115,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
       {/* Main Product Overview */}
       <section className="w-full py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
             {/* Left Image & Badges */}
             <div className="lg:col-span-6 flex flex-col gap-5">

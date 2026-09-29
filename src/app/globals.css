@@ -70,6 +70,42 @@
 .bg-cream-subtle { background-color: #EFE7DA; }
 .bg-cream-border { background-color: #E5DBCA; }
 
+/* ==========================================================================
+   Global Responsive Container System
+   - Optimizes content width across viewports (1440px - 1480px max-width)
+   - Minimizes excessive side gutters on desktop while keeping breathing room
+   ========================================================================== */
+.site-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* 16px mobile */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-left: 1.25rem; /* 20px tablet */
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: 2rem; /* 32px desktop */
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .site-container {
+    max-width: 1480px;
+    padding-left: 2.25rem; /* 36px large desktop */
+    padding-right: 2.25rem;
+  }
+}
+
 .bg-brand-navy { background-color: #0C2340; }
 .bg-brand-navy-dark { background-color: #0A192F; }
 .bg-brand-navy-deep { background-color: #061325; }
@@ -107,7 +143,7 @@
 .bg-gradient-navy-green,
 .bg-gradient-dark-brand {
   background:
-    radial-gradient(ellipse 50% 45% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(220, 235, 255, 0.05) 35%, transparent 65%),
+    radial-gradient(ellipse 50% 45% at 0% 0%, rgba(255, 255, 255, 0.28) 0%, rgba(220, 235, 255, 0.09) 45%, transparent 65%),
     radial-gradient(ellipse 55% 55% at 100% 100%, rgba(200, 16, 46, 0.28) 0%, rgba(120, 12, 28, 0.09) 45%, transparent 70%),
     linear-gradient(135deg, #0A1C33 5%, #071527 50%, #16070E 95%);
   background-color: #071527;

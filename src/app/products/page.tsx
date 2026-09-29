@@ -28,7 +28,7 @@ export default function ProductsCataloguePage() {
     <div className="flex flex-col w-full bg-[#FAF6F0]">
       {/* Catalogue Header */}
       <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
@@ -46,7 +46,7 @@ export default function ProductsCataloguePage() {
 
       {/* Filter & Search Bar */}
       <section className="w-full bg-[#F3ECE0] border-b border-cream-border sticky top-20 z-30 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-3.5">
+        <div className="site-container py-3.5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
             {/* Category Dropdown */}
             <div className="relative w-full sm:w-64 md:w-72 shrink-0">
@@ -104,7 +104,7 @@ export default function ProductsCataloguePage() {
 
       {/* Products Grid */}
       <section className="w-full py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="site-container">
           {filteredProducts.length > 0 ? (
             <StaggerGroup
               key={`${selectedCategory}-${searchQuery}`}

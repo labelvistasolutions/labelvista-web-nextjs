@@ -18,7 +18,7 @@ export default function PrintingWorkPage() {
         {/* Subtle background precision pattern */}
         <div className="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="relative site-container">
           <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-3.5 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-[12px] uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
@@ -58,7 +58,7 @@ export default function PrintingWorkPage() {
                 {/* Subtle dark grid background */}
                 <div className="absolute inset-0 bg-dot-dark opacity-35 pointer-events-none" />
 
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+                <div className="relative site-container">
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                     {/* Visual Side */}
                     <div className="lg:col-span-6">
@@ -144,7 +144,7 @@ export default function PrintingWorkPage() {
                 index % 2 === 0 ? "bg-[#FAF6F0]" : "bg-[#F5EFE6]"
               } border-b border-cream-border relative overflow-hidden`}
             >
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+              <div className="site-container">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                   {/* Visual Column */}
                   <div className={`lg:col-span-6 ${isEven ? "lg:order-2" : "lg:order-1"}`}>
@@ -234,7 +234,7 @@ export default function PrintingWorkPage() {
         {/* Engineering dot background */}
         <div className="absolute inset-0 bg-dot-dark opacity-30 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="relative site-container">
           {/* Section Heading */}
           <ScrollReveal direction="up" distance={20} className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-white/10 font-label-tag text-[12px] uppercase tracking-widest text-emerald-300 font-bold mb-3">
