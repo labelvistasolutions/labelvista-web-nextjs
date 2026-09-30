@@ -69,7 +69,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             href={`/contact?product=${encodeURIComponent(product.name)}`}
             className="relative z-20 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-brand-navy hover:bg-brand-navy-light text-white font-label-tag text-[10.5px] uppercase tracking-wider font-bold shadow-2xs hover:shadow-xs hover:scale-[1.02] transition-all duration-200 group/btn"
           >
-            <span>Get Quote</span>
+            <span>Get a Quote</span>
             <span className="material-symbols-outlined text-[11px] leading-none transition-transform duration-200 group-hover/quote:translate-x-0.5">
               send
             </span>

@@ -47,8 +47,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     product.badgeType === "green"
       ? "bg-brand-green/90"
       : product.badgeType === "red"
-      ? "bg-brand-red/90"
-      : "bg-brand-navy/90";
+        ? "bg-brand-red/90"
+        : "bg-brand-navy/90";
 
   return (
     <div className="flex flex-col w-full bg-[#FAF6F0]">
@@ -106,7 +106,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               href={`/contact?product=${encodeURIComponent(product.name)}`}
               className="btn-primary px-7 py-3.5 rounded-lg font-label-tag text-label-tag uppercase tracking-wider font-bold shrink-0"
             >
-              <span>Get Quote for This Label</span>
+              <span>Get a Quote for This Label</span>
               <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
             </Link>
           </ScrollReveal>
@@ -247,9 +247,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   {product.specifications.map((spec, idx) => (
                     <tr
                       key={idx}
-                      className={`border-b border-cream-border last:border-b-0 ${
-                        idx % 2 === 0 ? "bg-[#FFFDF9]" : "bg-[#FAF6F0]"
-                      }`}
+                      className={`border-b border-cream-border last:border-b-0 ${idx % 2 === 0 ? "bg-[#FFFDF9]" : "bg-[#FAF6F0]"
+                        }`}
                     >
                       <td className="py-4 px-6 font-label-tag text-[12px] uppercase tracking-wider text-brand-navy font-bold w-1/3">
                         {spec.label}
@@ -298,9 +297,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     {product.a4Codes.map((item, idx) => (
                       <tr
                         key={idx}
-                        className={`border-b border-cream-border last:border-b-0 ${
-                          idx % 2 === 0 ? "bg-[#FFFDF9]" : "bg-[#FAF6F0]"
-                        }`}
+                        className={`border-b border-cream-border last:border-b-0 ${idx % 2 === 0 ? "bg-[#FFFDF9]" : "bg-[#FAF6F0]"
+                          }`}
                       >
                         <td className="py-3.5 px-6 font-label-tag text-[12px] font-bold text-brand-navy">
                           {item.code}

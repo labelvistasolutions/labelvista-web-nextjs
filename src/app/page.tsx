@@ -13,113 +13,149 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col w-full">
-      {/* SECTION 1: HERO SECTION */}
-      <section className="relative w-full bg-[#FAF6F0] overflow-hidden border-b border-cream-border">
-        {/* Subtle Engineering Grid Background */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern opacity-15"></div>
+      {/* SECTION 1: IMMERSIVE HERO SECTION */}
+      <section className="relative w-full min-h-[640px] sm:min-h-[680px] lg:min-h-[720px] xl:min-h-[760px] flex flex-col justify-between overflow-hidden bg-brand-navy-deep">
+        {/* Full-Cover Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hero-manufacturing.jpg"
+            alt="Labelvista industrial precision roll label manufacturing and flexographic printing facility"
+            className="w-full h-full object-cover object-center scale-[1.02] transform-gpu"
+          />
+
+          {/* Transparent Directional Dark Overlay (Subtle vignette for text readability while revealing the image) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#061325]/78 via-[#0A192F]/48 to-[#061325]/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#061325]/60 via-transparent to-[#061325]/25" />
         </div>
 
-        <div className="relative site-container pt-7 sm:pt-10 lg:pt-12 xl:pt-14 pb-12 sm:pb-16 lg:pb-18 xl:pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center">
-            {/* Left Content Column */}
-            <div className="lg:col-span-6 flex flex-col items-start gap-5 sm:gap-6 z-10">
-              {/* Technical Eyebrow */}
+        {/* Hero Content Container */}
+        <div className="relative z-10 site-container pt-16 sm:pt-20 lg:pt-24 xl:pt-28 pb-20 sm:pb-24 lg:pb-28 my-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 xl:gap-14 items-center">
+
+            {/* Left Column: Authoritative White Typography & Primary CTAs */}
+            <div className="lg:col-span-6 xl:col-span-7 flex flex-col items-start gap-5 sm:gap-6">
+              {/* Category Eyebrow */}
               <ScrollReveal direction="up" distance={16} delay={0.05}>
-                <div className="flex flex-wrap items-center gap-2 text-brand-navy font-label-mono text-[11px] sm:text-[12px] uppercase tracking-wider font-semibold">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0"></span>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white font-label-mono text-[11px] sm:text-[12px] uppercase tracking-wider font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0 shadow-xs"></span>
                   <span>PRECISION LABEL MANUFACTURING</span>
                 </div>
               </ScrollReveal>
 
-              {/* Authoritative Manufacturing Headline */}
+              {/* Dominant Headline */}
               <ScrollReveal direction="up" distance={22} delay={0.15}>
-                <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] text-brand-navy font-extrabold tracking-tight leading-[1.08] max-w-2xl">
-                  Precision Manufacturing. Exceptional Labels.
+                <h1 className="font-headline-xl text-3xl sm:text-5xl lg:text-[46px] xl:text-[54px] text-white font-extrabold tracking-tight leading-[1.08] max-w-2xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+                  Precision Labels. <br />
+                  <span className="text-white/95 relative inline-block">
+                    Built for Every Application.
+                    <span className="absolute left-0 bottom-1 w-full h-[3px] bg-gradient-to-r from-brand-red via-brand-red/60 to-transparent rounded-full" />
+                  </span>
                 </h1>
               </ScrollReveal>
 
-              {/* High-Confidence Description */}
-              <ScrollReveal direction="up" distance={20} delay={0.28}>
-                <p className="text-brand-charcoal-muted font-body-lg text-[16px] sm:text-[17px] lg:text-[18px] leading-[1.65] tracking-[0.012em] max-w-xl">
+              {/* Concise Supporting Description */}
+              <ScrollReveal direction="up" distance={20} delay={0.25}>
+                <p className="text-white/90 font-body-lg text-[15px] sm:text-[17px] lg:text-[18px] leading-[1.65] tracking-[0.012em] max-w-xl drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]">
                   We make high-quality labels for businesses that need clear, dependable printing. Our factory in Surat, Gujarat handles cutting, printing, and roll finishing for all order sizes.
                 </p>
               </ScrollReveal>
 
-              {/* Restrained Premium CTAs */}
-              <ScrollReveal direction="up" distance={18} delay={0.4}>
-                <div className="flex flex-wrap items-center gap-3.5 pt-1">
+              {/* Integrated Action CTAs */}
+              <ScrollReveal direction="up" distance={18} delay={0.35}>
+                <div className="flex flex-wrap items-center gap-3.5 pt-2">
                   <Link
                     href="/products"
-                    className="btn-navy min-w-[175px] h-12 px-6 rounded-lg font-label-tag text-[12px] uppercase tracking-wider font-bold"
+                    className="inline-flex items-center justify-center gap-2 min-w-[170px] h-12 px-6 rounded-xl bg-brand-red hover:bg-brand-red-hover text-white font-label-tag text-[12px] uppercase tracking-wider font-bold shadow-lg hover:shadow-brand-red/30 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
                   >
                     <span>Explore Products</span>
                     <span className="material-symbols-outlined text-[16px] leading-none">arrow_forward</span>
                   </Link>
                   <Link
                     href="/contact"
-                    className="btn-primary min-w-[175px] h-12 px-6 rounded-lg font-label-tag text-[12px] uppercase tracking-wider font-bold"
+                    className="inline-flex items-center justify-center gap-2 min-w-[150px] h-12 px-6 rounded-xl bg-white hover:bg-[#FAF6F0] text-brand-navy border border-white font-label-tag text-[12px] uppercase tracking-wider font-extrabold shadow-md hover:shadow-white/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
                   >
-                    <span>Get Quote</span>
-                    <span className="material-symbols-outlined text-[16px] leading-none">send</span>
+                    <span>Get a Quote</span>
+                    <span className="material-symbols-outlined text-[16px] leading-none text-brand-navy">send</span>
                   </Link>
                 </div>
               </ScrollReveal>
+            </div>
 
-              {/* Manufacturing Technical Specification Strip */}
-              <ScrollReveal direction="up" distance={16} delay={0.52} className="w-full">
-                <div className="grid grid-cols-3 gap-4 sm:gap-6 w-full pt-6 mt-1 border-t border-cream-border">
-                  <div className="flex flex-col">
-                    <span className="font-headline-sm text-2xl sm:text-3xl text-brand-navy font-extrabold tracking-tight">14+</span>
-                    <span className="font-label-mono text-[10px] sm:text-[11px] text-brand-charcoal-muted uppercase tracking-wider font-medium mt-1 leading-tight">
-                      Years<br className="sm:hidden" /> Experience
+            {/* Right Column: Floating Information Spec Panel (Copper Stone inspired) */}
+            <div className="lg:col-span-6 xl:col-span-5 relative z-10 w-full">
+              <ScrollReveal
+                direction="up"
+                distance={24}
+                delay={0.25}
+                className="rounded-2xl sm:rounded-3xl bg-black/40 sm:bg-black/35 backdrop-blur-xl [backdrop-filter:blur(24px)] [-webkit-backdrop-filter:blur(24px)] border border-white/15 p-6 sm:p-7 lg:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.45)] text-white flex flex-col gap-5"
+              >
+                {/* Panel Top Header */}
+                <div className="flex flex-col gap-1.5 pb-4 border-b border-white/10">
+                  <span className="font-label-mono text-[10px] sm:text-[11px] text-brand-gold uppercase tracking-widest font-semibold">
+                    SIGNATURE CAPABILITIES
+                  </span>
+                  <h2 className="font-headline-sm text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+                    Spec-Ready Engineering
+                  </h2>
+                </div>
+
+                {/* Two Inner Feature Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  {/* Feature 1 */}
+                  <div className="p-4 sm:p-4.5 rounded-xl bg-white/[0.07] border border-white/10 hover:bg-white/[0.1] hover:border-white/20 transition-all duration-200 flex flex-col gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-brand-red/20 text-brand-red flex items-center justify-center shrink-0 border border-brand-red/30">
+                      <span className="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+                    </div>
+                    <span className="font-label-mono text-[10px] uppercase tracking-wider text-white/90 font-bold mt-1">
+                      PRECISION PRINTING
                     </span>
+                    <p className="font-body-sm text-[12px] sm:text-[13px] text-cream-border/80 leading-relaxed">
+                      Up to 6-Color UV flexographic printing with sharp barcode scannability.
+                    </p>
                   </div>
-                  <div className="flex flex-col border-l border-cream-border pl-4 sm:pl-6">
-                    <span className="font-headline-sm text-2xl sm:text-3xl text-brand-navy font-extrabold tracking-tight">6-Color</span>
-                    <span className="font-label-mono text-[10px] sm:text-[11px] text-brand-charcoal-muted uppercase tracking-wider font-medium mt-1 leading-tight">
-                      UV<br className="sm:hidden" /> Printing
+
+                  {/* Feature 2 */}
+                  <div className="p-4 sm:p-4.5 rounded-xl bg-white/[0.07] border border-white/10 hover:bg-white/[0.1] hover:border-white/20 transition-all duration-200 flex flex-col gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 border border-brand-gold/30">
+                      <span className="material-symbols-outlined text-[18px]">verified</span>
+                    </div>
+                    <span className="font-label-mono text-[10px] uppercase tracking-wider text-white/90 font-bold mt-1">
+                      ISO 9001 QUALITY
                     </span>
+                    <p className="font-body-sm text-[12px] sm:text-[13px] text-cream-border/80 leading-relaxed">
+                      Certified adhesive bonding &amp; tight-tolerance rotary die-cutting.
+                    </p>
                   </div>
-                  <div className="flex flex-col border-l border-cream-border pl-4 sm:pl-6">
-                    <span className="font-headline-sm text-2xl sm:text-3xl text-brand-navy font-extrabold tracking-tight">ISO 9001</span>
-                    <span className="font-label-mono text-[10px] sm:text-[11px] text-brand-charcoal-muted uppercase tracking-wider font-medium mt-1 leading-tight">
-                      Certified<br className="sm:hidden" /> Quality
-                    </span>
+                </div>
+
+                {/* Bottom Verification Footer Strip */}
+                <div className="pt-2 flex items-center justify-between text-[11px] sm:text-xs font-label-mono text-cream-border/75">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-brand-green shadow-xs animate-pulse" />
+                    <span>Surat Manufacturing Plant</span>
                   </div>
+                  <span className="text-white/80 font-bold">14+ Years Ex.</span>
                 </div>
               </ScrollReveal>
             </div>
 
-            {/* Right Manufacturing Showcase Column */}
-            <div className="lg:col-span-6 relative z-10 w-full">
-              <ImageReveal
-                delay={0.2}
-                duration={1.15}
-                zoomScale={1.05}
-                containerClassName="group rounded-2xl shadow-xl hover:shadow-2xl ring-1 ring-cream-border hover:ring-cream-border-dark aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] lg:scale-[1.04] lg:origin-center bg-cream-card transition-all duration-500 overflow-hidden cursor-pointer"
-              >
-                <div className="relative w-full h-full overflow-hidden">
-                  <img
-                    src="/images/hero-manufacturing.jpg"
-                    alt="Industrial precision roll label manufacturing and flexographic printing facility"
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-
-                  {/* Depth Vignette & Subtle Lighting Overlay on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-brand-navy-dark/30 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-                  {/* Subtle Refined Technical Specification Tag */}
-                  <div className="absolute bottom-3.5 left-3.5 bg-brand-navy-dark/85 group-hover:bg-brand-navy-dark/95 backdrop-blur-sm px-3 py-1.5 rounded text-[#FAF6F0] flex items-center gap-2 border border-white/10 shadow-sm transition-all duration-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-green group-hover:animate-pulse shrink-0"></span>
-                    <span className="font-label-mono text-[10px] sm:text-[11px] tracking-wider uppercase font-medium text-cream-surface">
-                      Surat Manufacturing Facility • Rotary Press
-                    </span>
-                  </div>
-                </div>
-              </ImageReveal>
-            </div>
           </div>
+        </div>
+
+        {/* Subtle Curved Bottom Transition into Section 2 */}
+        <div className="relative z-10 w-full leading-none overflow-hidden -mb-[1px]">
+          <svg
+            viewBox="0 0 1440 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-full h-8 sm:h-11 lg:h-12 block preserve-3d"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0 C360,40 1080,48 1440,16 L1440,48 L0,48 Z"
+              fill="#F3ECE0"
+            />
+          </svg>
         </div>
       </section>
 
@@ -450,13 +486,13 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Refined CTA Link */}
+              {/* High-Visibility Brand Red CTA Button */}
               <Link
                 href="/printing-work"
-                className="inline-flex items-center gap-2 h-11 px-5 rounded-lg border border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 text-white font-label-tag text-[12px] uppercase tracking-wider font-bold transition-all shadow-2xs group mt-1"
+                className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-brand-red hover:bg-brand-red-hover text-white font-label-tag text-[12px] uppercase tracking-wider font-bold transition-all duration-200 shadow-md hover:shadow-brand-red/30 hover:-translate-y-0.5 active:translate-y-0 group mt-2"
               >
                 <span>Explore Printing Work</span>
-                <span className="material-symbols-outlined text-[15px] leading-none transition-transform duration-300 group-hover:translate-x-1">
+                <span className="material-symbols-outlined text-[16px] leading-none transition-transform duration-300 group-hover:translate-x-1">
                   arrow_forward
                 </span>
               </Link>
@@ -623,45 +659,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 9: FINAL CONVERSION CTA */}
-      <section className="w-full bg-[#FAF6F0] pb-16 sm:pb-20 lg:pb-24">
+      {/* SECTION 9: FINAL CONVERSION CTA (Direct Inquiries) */}
+      <section className="w-full bg-[#FAF6F0] pb-20 sm:pb-24 lg:pb-28">
         <div className="site-container">
           <ScrollReveal
             direction="up"
             distance={24}
-            className="rounded-3xl bg-gradient-navy-red text-white p-8 sm:p-12 lg:p-14 shadow-xl border border-white/12 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10"
+            className="rounded-3xl bg-gradient-to-br from-[#061325] via-[#0A192F] to-[#16070E] text-white p-10 sm:p-14 lg:p-16 xl:p-20 shadow-2xl border border-white/15 relative overflow-hidden flex flex-col justify-between gap-10 min-h-[420px] sm:min-h-[460px] lg:min-h-[490px]"
           >
-            <div className="absolute inset-0 bg-grid-dark opacity-15 pointer-events-none"></div>
+            {/* Background Ambient Glows & Grid */}
+            <div className="absolute inset-0 bg-grid-dark opacity-15 pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-red/15 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-navy-light/20 blur-3xl pointer-events-none" />
 
-            <div className="flex flex-col items-start gap-3.5 max-w-2xl relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 border border-white/15 text-cream-surface font-label-tag text-[11px] uppercase tracking-widest font-bold shadow-2xs">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-red shrink-0"></span>
-                <span>Direct Inquiries</span>
+            {/* Top Row: Eyebrow + Headlines + Supporting Context */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+              <div className="lg:col-span-8 flex flex-col items-start gap-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-cream-surface font-label-mono text-[11px] sm:text-[12px] uppercase tracking-widest font-semibold backdrop-blur-sm shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-brand-red shrink-0 shadow-xs animate-pulse"></span>
+                  <span>DIRECT INQUIRIES &amp; CUSTOM ORDERS</span>
+                </div>
+
+                <h3 className="font-headline-lg text-2xl sm:text-4xl lg:text-[40px] text-white tracking-tight leading-[1.14] font-extrabold max-w-2xl">
+                  Need Custom Labels Engineered for Your Business?
+                </h3>
+
+                <p className="font-body-lg text-[16px] sm:text-[18px] text-cream-border/90 leading-relaxed font-normal max-w-xl">
+                  Get direct factory pricing, tailored adhesive recommendations, and fast sample delivery from our Surat manufacturing facility.
+                </p>
               </div>
-              <h3 className="font-headline-lg text-2xl sm:text-3xl lg:text-[36px] text-white tracking-tight leading-[1.18] font-extrabold">
-                Need Custom Labels for Your Business?
-              </h3>
-              <p className="font-body-md text-[16px] sm:text-[17px] text-slate-300 leading-relaxed font-normal">
-                Talk to our team for material advice and quick wholesale quotes.
-              </p>
+
+              {/* Right CTA Actions */}
+              <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-stretch gap-4 shrink-0 w-full">
+                <Link
+                  href="/contact"
+                  className="btn-primary inline-flex items-center justify-center gap-2.5 w-full h-[52px] px-7 rounded-xl font-label-tag text-[13px] uppercase tracking-wider font-bold shadow-lg hover:shadow-brand-red/30 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  <span>Request a Quote</span>
+                  <span className="material-symbols-outlined text-[18px] leading-none">send</span>
+                </Link>
+                <a
+                  href="tel:+919898706129"
+                  className="inline-flex items-center justify-center gap-2.5 w-full h-[52px] px-7 rounded-xl bg-white hover:bg-[#FAF6F0] text-brand-navy border border-white font-label-tag text-[13px] uppercase tracking-wider font-extrabold shadow-md hover:shadow-white/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  <span className="material-symbols-outlined text-[19px] leading-none text-brand-navy">call</span>
+                  <span>Call Direct Support</span>
+                </a>
+              </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3.5 shrink-0 relative z-10 w-full sm:w-auto">
-              <Link
-                href="/contact"
-                className="btn-primary w-full sm:w-auto min-w-[165px] h-12 px-6 rounded-lg font-label-tag text-[12px] uppercase tracking-wider font-bold"
-              >
-                <span>Get a Quote</span>
-                <span className="material-symbols-outlined text-[16px] leading-none">send</span>
-              </Link>
-              <Link
-                href="/contact"
-                className="btn-outline-white w-full sm:w-auto min-w-[165px] h-12 px-6 rounded-lg font-label-tag text-[12px] uppercase tracking-wider font-bold"
-              >
-                <span className="material-symbols-outlined text-[18px] leading-none">support_agent</span>
-                <span>Call Support</span>
-              </Link>
+            {/* Bottom Value Badges Strip (Adds generous structured height & trust) */}
+            <div className="pt-8 border-t border-white/12 grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-10">
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-red shrink-0 border border-white/10">
+                  <span className="material-symbols-outlined text-[20px]">schedule</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-label-tag text-xs font-bold text-white uppercase tracking-wider">Quick Response</span>
+                  <span className="text-xs text-cream-border/75 font-body-sm mt-0.5">Prompt quotes &amp; fast response</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold shrink-0 border border-white/10">
+                  <span className="material-symbols-outlined text-[20px]">tune</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-label-tag text-xs font-bold text-white uppercase tracking-wider">Custom Engineering</span>
+                  <span className="text-xs text-cream-border/75 font-body-sm mt-0.5">Custom sizes, dies &amp; adhesives</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-green shrink-0 border border-white/10">
+                  <span className="material-symbols-outlined text-[20px]">verified</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-label-tag text-xs font-bold text-white uppercase tracking-wider">ISO 9001:2015</span>
+                  <span className="text-xs text-cream-border/75 font-body-sm mt-0.5">Certified manufacturing standards</span>
+                </div>
+              </div>
             </div>
+
           </ScrollReveal>
         </div>
       </section>

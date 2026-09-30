@@ -100,7 +100,6 @@ export default function ScrollReveal({
     transition: hasReducedMotion
       ? "none"
       : `opacity ${duration}s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform ${duration}s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
-    willChange: isVisible ? "auto" : "opacity, transform",
   };
 
   const Tag = Component as any;
