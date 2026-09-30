@@ -4,6 +4,7 @@ import { productsData } from "@/data/products";
 import { industriesData } from "@/data/industries";
 import ProductCard from "@/components/ui/ProductCard";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import TestimonialsSection from "@/components/ui/TestimonialsSection";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import ImageReveal from "@/components/motion/ImageReveal";
 import { StaggerGroup, StaggerItem } from "@/components/motion/StaggerGroup";
@@ -634,6 +635,9 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* SECTION 7: CLIENT TESTIMONIALS (Authentic Indian B2B Experiences) */}
+      <TestimonialsSection />
 
       {/* SECTION 8: FAQ (FREQUENTLY ASKED QUESTIONS) */}
       <section id="faq" className="w-full bg-[#FAF6F0] py-16 sm:py-20 lg:py-24 border-t border-cream-border scroll-mt-20">
