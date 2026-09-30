@@ -14,18 +14,18 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="flex flex-col w-full bg-[#FAF6F0]">
-      {/* Page Header */}
-      <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
+      {/* About Introduction Header */}
+      <section className="relative w-full pt-10 sm:pt-14 lg:pt-16 pb-6 sm:pb-8 lg:pb-10">
         <div className="site-container">
-          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-4xl lg:max-w-5xl">
+          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-3.5 w-full">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
               About Labelvista Solutions
             </div>
-            <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.12]">
+            <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.14]">
               Reliable Label Manufacturing Since {companyData.establishedYear}.
             </h1>
-            <p className="font-body-lg text-[17px] sm:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em] max-w-3xl">
+            <p className="font-body-lg text-[16px] sm:text-[17px] lg:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em] max-w-4xl">
               We are an Indian label maker with over 14 years of experience. We specialize in barcode labels, thermal rolls, and multi-color printing.
             </p>
           </ScrollReveal>
@@ -33,7 +33,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Overview & Facility */}
-      <section className="relative w-full py-18 sm:py-22 lg:py-26 overflow-hidden">
+      <section className="relative w-full py-10 sm:py-14 lg:py-18 overflow-hidden">
         {/* Subtle background industrial pattern */}
         <div className="absolute inset-0 bg-dot-pattern opacity-35 pointer-events-none" />
 

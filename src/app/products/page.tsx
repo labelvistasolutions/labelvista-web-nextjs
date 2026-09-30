@@ -27,28 +27,49 @@ export default function ProductsCataloguePage() {
 
   return (
     <div className="flex flex-col w-full bg-[#FAF6F0]">
-      {/* Catalogue Header */}
-      <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
-        <div className="site-container">
-          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-3xl">
+      {/* Products Catalogue Section */}
+      <section className="relative w-full pt-10 sm:pt-14 lg:pt-16 pb-16 sm:pb-20 lg:pb-24">
+        <div className="site-container flex flex-col">
+          {/* Catalogue Header */}
+          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-3.5 w-full mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
               Our Products
             </div>
-            <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.12]">
+            <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.14]">
               Labels, Sheets &amp; Ribbons.
             </h1>
-            <p className="font-body-lg text-[17px] sm:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em]">
+            <p className="font-body-lg text-[16px] sm:text-[17px] lg:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em] max-w-none">
               Explore our barcode rolls, color printed labels, jewelry tags, A4 sheets, and thermal ribbons.
             </p>
           </ScrollReveal>
-        </div>
-      </section>
 
-      {/* Filter & Search Bar */}
-      <section className="w-full bg-[#F3ECE0] border-b border-cream-border sticky top-20 z-30 shadow-xs">
-        <div className="site-container py-3.5">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
+          {/* Search & Filter directly on page */}
+          <ScrollReveal direction="up" distance={16} delay={0.05} className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full mb-8 sm:mb-10">
+            {/* Search Input */}
+            <div className="relative w-full sm:w-72 md:w-80 shrink-0">
+              <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-[18px] pointer-events-none">
+                search
+              </span>
+              <input
+                id="product-search"
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-10 py-2.5 bg-white border border-cream-border rounded-xl text-sm text-brand-charcoal placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-navy/20 shadow-2xs"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  aria-label="Clear search query"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 transition-colors cursor-pointer"
+                >
+                  <span className="material-symbols-outlined text-[16px]">close</span>
+                </button>
+              )}
+            </div>
+
             {/* Category Dropdown */}
             <div className="relative w-full sm:w-64 md:w-72 shrink-0">
               <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-[18px] pointer-events-none">
@@ -59,7 +80,7 @@ export default function ProductsCataloguePage() {
                 aria-label="Filter by category"
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full pl-10 pr-9 py-2.5 bg-white border border-cream-border rounded-lg text-sm font-medium text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-navy/20 cursor-pointer appearance-none transition-colors"
+                className="w-full pl-10 pr-9 py-2.5 bg-white border border-cream-border rounded-xl text-sm font-medium text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-navy/20 cursor-pointer appearance-none transition-colors shadow-2xs"
               >
                 <option value="all">All Products ({productsData.length})</option>
                 {productCategories.map((cat) => {
@@ -75,37 +96,9 @@ export default function ProductsCataloguePage() {
                 expand_more
               </span>
             </div>
+          </ScrollReveal>
 
-            {/* Search Input */}
-            <div className="relative w-full sm:w-72 md:w-80 shrink-0">
-              <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-[18px] pointer-events-none">
-                search
-              </span>
-              <input
-                id="product-search"
-                type="text"
-                placeholder="Search products..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-10 py-2.5 bg-white border border-cream-border rounded-lg text-sm text-brand-charcoal placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-navy/20"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  aria-label="Clear search query"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600 transition-colors cursor-pointer"
-                >
-                  <span className="material-symbols-outlined text-[16px]">close</span>
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Products Grid */}
-      <section className="w-full py-16 sm:py-20 lg:py-24">
-        <div className="site-container">
+          {/* Products Grid */}
           {filteredProducts.length > 0 ? (
             <StaggerGroup
               key={`${selectedCategory}-${searchQuery}`}
