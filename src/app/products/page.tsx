@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import { productsData } from "@/data/products";
 import { productCategories } from "@/data/categories";
 import ProductCard from "@/components/ui/ProductCard";
+import DirectInquiriesCTA from "@/components/ui/DirectInquiriesCTA";
 import Link from "next/link";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import { StaggerGroup, StaggerItem } from "@/components/motion/StaggerGroup";
@@ -148,32 +149,11 @@ export default function ProductsCataloguePage() {
               </button>
             </div>
           )}
-
-          {/* Bottom Custom Request Card */}
-          <ScrollReveal
-            direction="up"
-            distance={20}
-            threshold={0}
-            rootMargin="60px 0px 0px 0px"
-            className="mt-16 sm:mt-20 rounded-2xl bg-[#FFFDF9] p-8 sm:p-10 lg:p-12 shadow-md border border-cream-border flex flex-col md:flex-row items-center justify-between gap-8"
-          >
-            <div className="flex flex-col gap-2 max-w-xl">
-              <h3 className="font-headline-sm text-xl sm:text-2xl text-brand-navy font-bold tracking-tight">
-                Need a Custom Size or Special Glue?
-              </h3>
-              <p className="font-body-md text-[15px] sm:text-[16px] text-brand-charcoal-muted leading-relaxed tracking-[0.01em]">
-                We make custom label sizes, special shapes, removable glue, and freezer-safe stickers.
-              </p>
-            </div>
-            <Link
-              href="/contact"
-              className="btn-primary px-7 py-3.5 rounded-lg font-label-tag text-label-tag uppercase tracking-wider font-bold shrink-0"
-            >
-              Request Custom Labels
-            </Link>
-          </ScrollReveal>
         </div>
       </section>
+
+      {/* Direct Inquiries & Custom Orders CTA */}
+      <DirectInquiriesCTA />
     </div>
   );
 }

@@ -86,7 +86,7 @@ function ContactFormContent() {
       <ScrollReveal direction="up" distance={22} delay={0.1} className="lg:col-span-5 flex flex-col gap-8">
         <div>
           <span className="font-label-tag text-label-tag uppercase tracking-widest text-brand-red font-bold block mb-2">
-            Factory Location
+            FACTORY LOCATION
           </span>
           <h2 className="font-headline-lg text-2xl sm:text-3xl text-brand-navy font-extrabold tracking-tight">
             Talk to Our Team
@@ -382,10 +382,11 @@ function ContactFormContent() {
 export default function ContactPage() {
   return (
     <div className="flex flex-col w-full bg-[#FAF6F0]">
-      {/* Page Header */}
-      <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
-        <div className="site-container">
-          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-3xl">
+      {/* Continuous Contact Hero & Content Section */}
+      <section className="relative w-full pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
+        <div className="site-container flex flex-col">
+          {/* Contact Introduction Header */}
+          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-3.5 max-w-3xl mb-12 sm:mb-14 lg:mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
               Contact &amp; Quotes
@@ -393,16 +394,12 @@ export default function ContactPage() {
             <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.12]">
               Get in Touch with Us.
             </h1>
-            <p className="font-body-lg text-[17px] sm:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em]">
+            <p className="font-body-lg text-[16px] sm:text-[17px] lg:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em]">
               Contact our team for price quotes, sample labels, and custom orders.
             </p>
           </ScrollReveal>
-        </div>
-      </section>
 
-      {/* Main Form Section wrapped in Suspense for useSearchParams */}
-      <section className="w-full py-16 sm:py-20 lg:py-24">
-        <div className="site-container">
+          {/* Main Form & Factory Location Grid wrapped in Suspense for useSearchParams */}
           <Suspense fallback={<div className="text-center py-12 font-body-md text-brand-charcoal-muted">Loading quote form...</div>}>
             <ContactFormContent />
           </Suspense>

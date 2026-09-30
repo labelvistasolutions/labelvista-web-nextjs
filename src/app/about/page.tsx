@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { companyData } from "@/data/company";
+import DirectInquiriesCTA from "@/components/ui/DirectInquiriesCTA";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import ImageReveal from "@/components/motion/ImageReveal";
 import { StaggerGroup, StaggerItem } from "@/components/motion/StaggerGroup";
@@ -16,7 +17,7 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="relative w-full bg-[#FAF6F0] border-b border-cream-border py-14 lg:py-20">
         <div className="site-container">
-          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-3xl">
+          <ScrollReveal direction="up" distance={20} className="flex flex-col items-start gap-4 max-w-4xl lg:max-w-5xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-brand-red/10 text-brand-red font-label-tag text-label-tag uppercase tracking-wider font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-red"></span>
               About Labelvista Solutions
@@ -24,7 +25,7 @@ export default function AboutPage() {
             <h1 className="font-headline-xl text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight font-extrabold leading-[1.12]">
               Reliable Label Manufacturing Since {companyData.establishedYear}.
             </h1>
-            <p className="font-body-lg text-[17px] sm:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em]">
+            <p className="font-body-lg text-[17px] sm:text-[18px] text-brand-charcoal-muted leading-relaxed tracking-[0.012em] max-w-3xl">
               We are an Indian label maker with over 14 years of experience. We specialize in barcode labels, thermal rolls, and multi-color printing.
             </p>
           </ScrollReveal>
@@ -398,19 +399,11 @@ export default function AboutPage() {
               </StaggerItem>
             </StaggerGroup>
           </div>
-
-          {/* Direct CTA */}
-          <ScrollReveal direction="up" distance={16} delay={0.2} className="mt-14 sm:mt-16 text-center">
-            <Link
-              href="/contact"
-              className="btn-primary px-8 py-3.5 rounded-lg font-label-tag text-[12px] uppercase tracking-wider font-bold"
-            >
-              <span>Contact Our Team</span>
-              <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-            </Link>
-          </ScrollReveal>
         </div>
       </section>
+
+      {/* Direct Inquiries & Custom Orders CTA */}
+      <DirectInquiriesCTA />
     </div>
   );
 }
