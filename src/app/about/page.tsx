@@ -47,8 +47,8 @@ export default function AboutPage() {
                 containerClassName="group rounded-2xl bg-white shadow-[0_12px_36px_rgba(12,35,64,0.07)] border border-stone-200/90 aspect-[4/3]"
               >
                 <img
-                  src="/images/facility/surat-plant.jpg"
-                  alt="Industrial label slitting and roll winding manufacturing facility in Surat"
+                  src="/images/hero-manufacturing.jpg"
+                  alt="Industrial label slitting, printing and roll winding manufacturing facility in Surat"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                 />
 
