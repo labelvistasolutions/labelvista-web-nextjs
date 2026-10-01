@@ -95,6 +95,13 @@ export default function Footer() {
                 <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-brand-red rounded-full transition-transform duration-300 ease-out origin-left scale-x-0 group-hover:scale-x-100" />
               </Link>
               <Link
+                href="/blog"
+                className="relative group font-body text-[14px] sm:text-[14.5px] text-slate-300 hover:text-white transition-colors duration-200 inline-block w-fit leading-relaxed py-0.5"
+              >
+                <span>Blog</span>
+                <span className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-brand-red rounded-full transition-transform duration-300 ease-out origin-left scale-x-0 group-hover:scale-x-100" />
+              </Link>
+              <Link
                 href="/contact"
                 className="relative group font-body text-[14px] sm:text-[14.5px] text-slate-300 hover:text-white transition-colors duration-200 inline-block w-fit leading-relaxed py-0.5"
               >
