@@ -163,52 +163,52 @@ export default function HomePage() {
 
       {/* SECTION 2: HORIZONTAL MANUFACTURING CAPABILITY SPECIFICATION BAND */}
       <section className="w-full bg-[#F3ECE0] border-b border-cream-border">
-        <div className="site-container py-7 sm:py-8">
+        <div className="site-container py-8 sm:py-9">
           <StaggerGroup
             staggerInterval={0.08}
             baseDelay={0.05}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-cream-border"
           >
             {/* 01 */}
-            <StaggerItem index={0} className="flex flex-col gap-1 lg:px-6 first:lg:pl-0">
-              <div className="flex items-center gap-2">
-                <span className="font-label-mono text-[11px] font-bold text-brand-red tracking-wider">01</span>
-                <span className="font-label-tag text-[12px] font-bold uppercase tracking-wider text-brand-navy">Premium Materials</span>
+            <StaggerItem index={0} className="flex flex-col gap-1.5 lg:px-6 first:lg:pl-0">
+              <div className="flex items-center gap-2.5">
+                <span className="font-label-mono text-[13px] font-bold text-brand-red tracking-wider">01</span>
+                <span className="font-label-tag text-[13.5px] sm:text-[14px] font-bold uppercase tracking-wider text-brand-navy">Premium Materials</span>
               </div>
-              <p className="font-body-sm text-[13px] text-brand-charcoal-muted leading-relaxed pl-5 sm:pl-0">
+              <p className="font-body text-[14px] sm:text-[14.5px] text-brand-charcoal-muted leading-relaxed pl-6 sm:pl-0">
                 Quality self-adhesive papers and films
               </p>
             </StaggerItem>
 
             {/* 02 */}
-            <StaggerItem index={1} className="flex flex-col gap-1 lg:px-6">
-              <div className="flex items-center gap-2">
-                <span className="font-label-mono text-[11px] font-bold text-brand-red tracking-wider">02</span>
-                <span className="font-label-tag text-[12px] font-bold uppercase tracking-wider text-brand-navy">Precision Cutting</span>
+            <StaggerItem index={1} className="flex flex-col gap-1.5 lg:px-6">
+              <div className="flex items-center gap-2.5">
+                <span className="font-label-mono text-[13px] font-bold text-brand-red tracking-wider">02</span>
+                <span className="font-label-tag text-[13.5px] sm:text-[14px] font-bold uppercase tracking-wider text-brand-navy">Precision Cutting</span>
               </div>
-              <p className="font-body-sm text-[13px] text-brand-charcoal-muted leading-relaxed pl-5 sm:pl-0">
+              <p className="font-body text-[14px] sm:text-[14.5px] text-brand-charcoal-muted leading-relaxed pl-6 sm:pl-0">
                 Precise cutting and roll finishing
               </p>
             </StaggerItem>
 
             {/* 03 */}
-            <StaggerItem index={2} className="flex flex-col gap-1 lg:px-6">
-              <div className="flex items-center gap-2">
-                <span className="font-label-mono text-[11px] font-bold text-brand-red tracking-wider">03</span>
-                <span className="font-label-tag text-[12px] font-bold uppercase tracking-wider text-brand-navy">Clear Printing</span>
+            <StaggerItem index={2} className="flex flex-col gap-1.5 lg:px-6">
+              <div className="flex items-center gap-2.5">
+                <span className="font-label-mono text-[13px] font-bold text-brand-red tracking-wider">03</span>
+                <span className="font-label-tag text-[13.5px] sm:text-[14px] font-bold uppercase tracking-wider text-brand-navy">Clear Printing</span>
               </div>
-              <p className="font-body-sm text-[13px] text-brand-charcoal-muted leading-relaxed pl-5 sm:pl-0">
+              <p className="font-body text-[14px] sm:text-[14.5px] text-brand-charcoal-muted leading-relaxed pl-6 sm:pl-0">
                 6-color UV printing for sharp details
               </p>
             </StaggerItem>
 
             {/* 04 */}
-            <StaggerItem index={3} className="flex flex-col gap-1 lg:px-6 last:lg:pr-0">
-              <div className="flex items-center gap-2">
-                <span className="font-label-mono text-[11px] font-bold text-brand-red tracking-wider">04</span>
-                <span className="font-label-tag text-[12px] font-bold uppercase tracking-wider text-brand-navy">Fast Production</span>
+            <StaggerItem index={3} className="flex flex-col gap-1.5 lg:px-6 last:lg:pr-0">
+              <div className="flex items-center gap-2.5">
+                <span className="font-label-mono text-[13px] font-bold text-brand-red tracking-wider">04</span>
+                <span className="font-label-tag text-[13.5px] sm:text-[14px] font-bold uppercase tracking-wider text-brand-navy">Fast Production</span>
               </div>
-              <p className="font-body-sm text-[13px] text-brand-charcoal-muted leading-relaxed pl-5 sm:pl-0">
+              <p className="font-body text-[14px] sm:text-[14.5px] text-brand-charcoal-muted leading-relaxed pl-6 sm:pl-0">
                 Fast and reliable production on machines
               </p>
             </StaggerItem>
