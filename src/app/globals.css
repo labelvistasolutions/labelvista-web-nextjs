@@ -592,6 +592,11 @@ button:disabled {
   animation-play-state: paused;
 }
 
+/* Material Symbols Font Variations */
+.font-variation-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
 /* Accessibility & Reduced Motion Overrides */
 @media (prefers-reduced-motion: reduce) {
   *,

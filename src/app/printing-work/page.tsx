@@ -377,10 +377,10 @@ export default function PrintingWorkPage() {
           <StaggerGroup staggerInterval={0.1} baseDelay={0.05} className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
             {/* Spec 1: Cutting Accuracy */}
             <StaggerItem index={0}>
-              <div className="group rounded-2xl bg-[#061325]/75 border border-white/10 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-colors duration-300 hover:border-brand-red/40 shadow-xs h-full">
+              <div className="group rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-all duration-300 hover:bg-white/[0.16] hover:border-brand-red/60 shadow-lg h-full">
                 <div>
-                  <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
-                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-400 font-bold">
+                  <div className="flex items-center justify-between pb-4 border-b border-white/15 mb-5">
+                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-300 font-bold">
                       SPEC 01 / TOLERANCE
                     </span>
                     <span className="w-2 h-2 rounded-full bg-brand-red"></span>
@@ -394,24 +394,24 @@ export default function PrintingWorkPage() {
                     Cutting Accuracy
                   </h3>
 
-                  <p className="font-body-sm text-[14px] text-slate-300 leading-relaxed">
+                  <p className="font-body-sm text-[14px] text-slate-200 leading-relaxed">
                     Electronic optical sensors calibrate real-time web tension to ensure dies cut within strict &plusmn;0.05 mm tolerances.
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11.5px] font-label-tag text-slate-400 font-bold uppercase tracking-wider">
+                <div className="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-[11.5px] font-label-tag text-slate-300 font-bold uppercase tracking-wider">
                   <span>Registration Control</span>
-                  <span className="text-emerald-400">Calibrated</span>
+                  <span className="text-emerald-300 font-bold">Calibrated</span>
                 </div>
               </div>
             </StaggerItem>
 
             {/* Spec 2: UV Flexo Printing */}
             <StaggerItem index={1}>
-              <div className="group rounded-2xl bg-[#061325]/75 border border-white/10 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-colors duration-300 hover:border-emerald-400/40 shadow-xs h-full">
+              <div className="group rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-all duration-300 hover:bg-white/[0.16] hover:border-emerald-400/60 shadow-lg h-full">
                 <div>
-                  <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
-                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-400 font-bold">
+                  <div className="flex items-center justify-between pb-4 border-b border-white/15 mb-5">
+                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-300 font-bold">
                       SPEC 02 / UV CURING
                     </span>
                     <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -425,24 +425,24 @@ export default function PrintingWorkPage() {
                     UV Flexo Printing
                   </h3>
 
-                  <p className="font-body-sm text-[14px] text-slate-300 leading-relaxed">
+                  <p className="font-body-sm text-[14px] text-slate-200 leading-relaxed">
                     High-output UV curing stations instantly dry specialized inks so multi-color prints stay vibrant, smudge-free, and crisp.
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11.5px] font-label-tag text-slate-400 font-bold uppercase tracking-wider">
+                <div className="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-[11.5px] font-label-tag text-slate-300 font-bold uppercase tracking-wider">
                   <span>Instant Polymerization</span>
-                  <span className="text-emerald-400">Active</span>
+                  <span className="text-emerald-300 font-bold">Active</span>
                 </div>
               </div>
             </StaggerItem>
 
             {/* Spec 3: Ready Tooling */}
             <StaggerItem index={2}>
-              <div className="group rounded-2xl bg-[#061325]/75 border border-white/10 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-colors duration-300 hover:border-white/30 shadow-xs h-full">
+              <div className="group rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-7 sm:p-8 lg:p-9 flex flex-col justify-between transition-all duration-300 hover:bg-white/[0.16] hover:border-white/50 shadow-lg h-full">
                 <div>
-                  <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
-                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-400 font-bold">
+                  <div className="flex items-center justify-between pb-4 border-b border-white/15 mb-5">
+                    <span className="font-label-tag text-[11px] uppercase tracking-widest text-slate-300 font-bold">
                       SPEC 03 / READY TOOLING
                     </span>
                     <span className="w-2 h-2 rounded-full bg-white"></span>
@@ -456,14 +456,14 @@ export default function PrintingWorkPage() {
                     Standard Dies Ready
                   </h3>
 
-                  <p className="font-body-sm text-[14px] text-slate-300 leading-relaxed">
+                  <p className="font-body-sm text-[14px] text-slate-200 leading-relaxed">
                     Pre-configured rotary dies and matrix converters ready for immediate high-volume roll and A4 sheet production.
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11.5px] font-label-tag text-slate-400 font-bold uppercase tracking-wider">
+                <div className="mt-6 pt-4 border-t border-white/15 flex items-center justify-between text-[11.5px] font-label-tag text-slate-300 font-bold uppercase tracking-wider">
                   <span>Tooling Inventory</span>
-                  <span className="text-emerald-400">In Stock</span>
+                  <span className="text-emerald-300 font-bold">In Stock</span>
                 </div>
               </div>
             </StaggerItem>
