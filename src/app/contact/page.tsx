@@ -96,7 +96,7 @@ function ContactFormContent() {
           </p>
         </div>
 
-        <div className="p-7 sm:p-8 rounded-2xl bg-[#FFFDF9] border border-cream-border flex flex-col gap-6 shadow-sm">
+        <div className="p-7 sm:p-8 rounded-2xl bg-white border border-cream-border flex flex-col gap-6 shadow-sm">
           <div className="flex items-start gap-4">
             <div className="w-11 h-11 rounded-xl bg-brand-navy/10 flex items-center justify-center text-brand-navy shrink-0 shadow-2xs">
               <span className="material-symbols-outlined text-[22px]">location_on</span>
@@ -173,7 +173,7 @@ function ContactFormContent() {
       </ScrollReveal>
 
       {/* Inquiry / Quote Form Right */}
-      <ScrollReveal direction="up" distance={24} delay={0.2} className="lg:col-span-7 bg-[#FFFDF9] rounded-2xl border border-cream-border p-8 sm:p-10 lg:p-12 shadow-xl">
+      <ScrollReveal direction="up" distance={24} delay={0.2} className="lg:col-span-7 bg-white rounded-2xl border border-cream-border p-8 sm:p-10 lg:p-12 shadow-md">
         {submitted ? (
           <div className="text-center py-10 flex flex-col items-center gap-4">
             <div className="w-16 h-16 rounded-full bg-brand-green-subtle text-brand-green flex items-center justify-center shadow-inner">
